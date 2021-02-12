@@ -31,7 +31,7 @@ jobs:
       - name: Test
         run: go test -v ./...
         
-        - name: Build binary for docker image
+      - name: Build binary for docker image
         run: go build -v -o bank ./cmd/bank
         env:
           CGO_ENABLED: 0
